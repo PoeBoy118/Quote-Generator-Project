@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funny Quote Generator</title>
+</head>
+<body>
+    <h1>Funny Quote Generator 1.0</h1>
+    <h2>Generate Your Own Funny Phrase Using a Sentence Type Below</h2>
+    
+    <form>
+        <label for="sentence01">Sentence Type 01</label>
+        <input type="radio" name="sentenceType" value="Sentence Type 01">
+        
+        <label for="sentence02">Sentence Type 02</label>
+        <input type="radio" name="sentenceType" value="Sentence Type 02">
+
+        <input type="button" value="Submit" id="testButton" onclick="buttonTest()">
+    </form>
+
+    <h2>Type 01 Description</h2>
+    <p>This (noun) is (adjective) (verb) on the (noun)!</p>
+
+    <h2>Type 02 Description</h2>
+    <p>Well well, isn't this a (adjective) surprise?  (Noun) is here to finally (verb) up the place!</p>
+
+    <script type="module" src="./scripts/generatorScript.js"></script>
+</body>
+</html>
