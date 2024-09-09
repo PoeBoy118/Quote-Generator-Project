@@ -1,0 +1,11 @@
+{
+  "name": "quote-generator-project",
+  "version": "1.0.0",
+  "source": "QuoteGeneratorIndex.html",
+  "scripts": {
+    "start": "QuoteGeneratorIndex.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

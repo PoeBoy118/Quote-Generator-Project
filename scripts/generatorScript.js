@@ -1,13 +1,13 @@
-import { nounList } from "./wordLibrary"
+import { nounList } from "./wordLibrary.js"
 
-const testButton = document.getElementById("testButton")
+// const testButton = document.getElementById("testButton")
 
 let buttonTest = () => {
     console.log("Button Works")
 }
 
 let generator = () => {
-    nounList = nounList
+    console.log(nounList)
 }
 
 generator()
