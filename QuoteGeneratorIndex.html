@@ -9,15 +9,25 @@
     <h1>Funny Quote Generator 1.0</h1>
     <h2>Generate Your Own Funny Phrase Using a Sentence Type Below</h2>
     
-    <form>
+    <!-- <form name="sentenceForm">
         <label for="sentence01">Sentence Type 01</label>
-        <input type="radio" name="sentenceType" value="Sentence Type 01">
+        <input type="radio" name="sentenceType" value="Sentence Type 01" id="sentenceSelection01">
         
         <label for="sentence02">Sentence Type 02</label>
-        <input type="radio" name="sentenceType" value="Sentence Type 02">
+        <input type="radio" name="sentenceType" value="Sentence Type 02" id="sentenceSelection02">
 
         <input type="button" value="Submit" id="testButton" >
-        <!-- onclick="buttonTest()" -->
+         onclick="buttonTest()"
+    </form> -->
+    
+    <form name="sentenceForm"></form>
+        <label for="sentence01">Sentence Type 01</label>
+        <input type="button" name="sentenceType" value="Sentence Type 01" id="sentenceSelection01" onclick="type01Switch()">
+        
+        <label for="sentence02">Sentence Type 02</label>
+        <input type="button" name="sentenceType" value="Sentence Type 02" id="sentenceSelection02" onclick="type02Switch()">
+
+        <input type="button" value="Submit" id="testButton" onclick="generator()">
     </form>
 
     <h2>Type 01 Description</h2>
@@ -25,6 +35,9 @@
 
     <h2>Type 02 Description</h2>
     <p>Well well, isn't this a (adjective) surprise?  (Noun) is here to finally (verb) up the place!</p>
+
+    <h2>Quote Result</h2>
+    <p id="quoteResult"></p>
 
     <script type="module" src="./scripts/generatorScript.js"></script>
 </body>
