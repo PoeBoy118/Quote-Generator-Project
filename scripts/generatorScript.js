@@ -15,17 +15,20 @@ import { verbList } from "./wordLibrary.js"
 // let sentenceRadio01 = document.forms.namedItem("sentenceselection01")
 // let sentenceRadio02 = document.forms.namedItem("sentenceSelection02")
 
-let type01Switch = () => {
+let sentenceType = null
+console.log("sentenceType =", sentenceType)
+
+const type01Switch = () => {
     sentenceType = 1
-    console.log(sentenceType)
+    console.log("sentenceType =", sentenceType)
 }
 
-let type02Switch = () => {
+const type02Switch = () => {
     sentenceType = 2
-    console.log(sentenceType)
+    console.log("sentenceType =", sentenceType)
 }
 
-let generator = () => {
+const generator = () => {
     // console.log(nounList)
 
     
@@ -41,6 +44,7 @@ let generator = () => {
     // let inputValue = document.getElementById("sentenceSelection");
     // console.log("input value is:", inputValue);
 
+    let quoteOutput = ""
 
     if (sentenceType === 1) {
         let quoteOutput = quoteStyle01
@@ -58,4 +62,8 @@ let generator = () => {
 
 
 
-// generator()
+
+// Attach functions to the window object to make them accessible globally
+window.type01Switch = type01Switch;
+window.type02Switch = type02Switch;
+window.generator = generator;
