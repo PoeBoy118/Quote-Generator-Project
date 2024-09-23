@@ -31,14 +31,14 @@ const type02Switch = () => {
 const generator = () => {
     // console.log(nounList)
 
-    
+    // console.log("List of Nouns", nounList)
 
-    let noun = nounList[Math.floor(Math.random(nounList.length))];
-    let adjective = adjList[Math.floor(Math.random(adjList.length))];
-    let verb = verbList[Math.floor(Math.random(verbList.length))];
+    let noun = nounList[Math.floor(Math.random() * nounList.length)];
+    let adjective = adjList[Math.floor(Math.random() * adjList.length)];
+    let verb = verbList[Math.floor(Math.random() * verbList.length)];
     console.log(`noun: ${noun}, adjective: ${adjective}, verb: ${verb}`);
 
-    let quoteStyle01 = `This ${noun} is ${adjective} ${verb} on the ${noun}!`;
+    let quoteStyle01 = `This ${noun} is ${adjective} ${verb}ing on the ${noun}!`;
     let quoteStyle02 = `Well well, isn't this a ${adjective} surprise?  ${noun} is here to finally ${verb} up the place!`;
 
     // let inputValue = document.getElementById("sentenceSelection");
@@ -47,11 +47,11 @@ const generator = () => {
     let quoteOutput = ""
 
     if (sentenceType === 1) {
-        let quoteOutput = quoteStyle01
+        quoteOutput = quoteStyle01
     } else if (sentenceType === 2) {
-        let quoteOutput = quoteStyle02
+        quoteOutput = quoteStyle02
     } else {
-        let quoteOutput = "Quote Error"
+        lquoteOutput = "Quote Error"
     };
 
     console.log(`quote result: ${quoteOutput}`);
